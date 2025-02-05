@@ -10,7 +10,6 @@ function App() {
       {/* Navigation */}
       <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
         <Container>
-          <Navbar.Brand href="#home">Ravi Teja Chintala</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
@@ -33,9 +32,9 @@ function App() {
                 src={profilepic} // Replace with your actual profile picture URL
                 alt="Ravi Teja Chintala"
                 style={{
-                  width: '150px',
-                  height: '150px',
-                  borderRadius: '50%',
+                  width: '250px',
+                  height: '250px',
+                  borderRadius: '0%',
                   objectFit: 'cover',
                   border: '4px solid white',
                 }}
