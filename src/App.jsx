@@ -1,4 +1,5 @@
 import React from 'react';
+import profilepic from "./images/profilepic.jpg"
 import { Container, Row, Col, Card, Button, Nav, Navbar } from 'react-bootstrap';
 import { Box, Typography, Paper, Grid } from '@mui/material';
 import { Github, Linkedin, Mail, ExternalLink, Code2, Blocks, Database, Terminal } from 'lucide-react';
@@ -23,28 +24,36 @@ function App() {
       </Navbar>
 
       {/* Hero Section */}
-      <Box
-        sx={{
-          background: 'linear-gradient(135deg, #2563eb 0%, #4f46e5 100%)',
-          color: 'white',
-          py: 12
-        }}
-      >
+      <Box sx={{ backgroundColor: '#FF7F50', color: 'white', py: 8, textAlign: 'center' }}>
         <Container>
           <Row className="align-items-center">
-            <Col md={8} className="mx-auto text-center">
-              <Typography variant="h2" component="h2" sx={{ mb: 3, fontWeight: 'bold', fontSize: { xs: '2.5rem', md: '3.5rem' } }}>
+            {/* Profile Picture */}
+            <Col md={4} className="text-center">
+              <img
+                src={profilepic} // Replace with your actual profile picture URL
+                alt="Ravi Teja Chintala"
+                style={{
+                  width: '150px',
+                  height: '150px',
+                  borderRadius: '50%',
+                  objectFit: 'cover',
+                  border: '4px solid white',
+                }}
+              />
+            </Col>
+
+            {/* Name and Description */}
+            <Col md={8} className="mx-auto">
+              <Typography variant="h3" sx={{ fontWeight: 'bold', fontSize: { xs: '2rem', md: '3rem' } }}>
                 Ravi Teja Chintala
               </Typography>
-              <Typography variant="h4" sx={{ mb: 4, color: 'rgba(255, 255, 255, 0.9)' }}>
-                Frontend Developer
-              </Typography>
+              <Typography variant="h5" sx={{ mb: 4 }}>Frontend Developer</Typography>
               <div className="d-flex gap-3 justify-content-center">
-                <Button variant="light" href="https://github.com/Raviteja0309" className="d-flex align-items-center gap-2">
+                <Button variant="light" href="https://github.com/Raviteja0309">
                   <Github size={20} />
                   GitHub
                 </Button>
-                <Button variant="light" href="https://www.linkedin.com/feed/" className="d-flex align-items-center gap-2">
+                <Button variant="light" href="https://www.linkedin.com/feed/">
                   <Linkedin size={20} />
                   LinkedIn
                 </Button>
@@ -80,17 +89,63 @@ function App() {
       <Container className="py-5" id="about">
         <Row>
           <Col md={8} className="mx-auto">
-            <Typography variant="h3" component="h2" sx={{ mb: 4, fontWeight: 'bold' }}>
+            <Typography
+              variant="h3"
+              component="h2"
+              sx={{
+                mb: 4,
+                fontWeight: 'bold',
+                fontSize: '2.5rem',
+                color: '#333'
+              }}
+            >
               Experience & Education
             </Typography>
-            <Paper elevation={0} sx={{ p: 4, backgroundColor: 'rgba(255, 255, 255, 0.8)' }}>
-              <Typography variant="body1" sx={{ mb: 3 }}>
-                I'm a passionate frontend developer with 2 years of experience in building modern web applications.
+            <Paper
+              elevation={2}
+              sx={{
+                p: 4,
+                backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+                borderRadius: 2
+              }}
+            >
+              <Typography
+                variant="body1"
+                sx={{
+                  mb: 3,
+                  fontSize: '1.1rem',
+                  lineHeight: 1.6,
+                  color: '#555'
+                }}
+              >
+                I am a passionate frontend developer with 2 years of experience in building modern web applications.
                 I specialize in React, JavaScript, and modern CSS frameworks, with a strong focus on creating
                 responsive and accessible user interfaces.
               </Typography>
+              <Typography
+                variant="h6"
+                sx={{ fontWeight: 'bold', mb: 2 }}
+              >
+                Education
+              </Typography>
+              <Typography variant="body1" sx={{ mb: 3 }}>
+                I completed my Bachelor of Technology (B.Tech) in Computer Science from Raghu Institue of Technology in 2023.
+                During my time at college, I developed a strong foundation in programming, algorithms, and web technologies.
+              </Typography>
+              <Typography
+                variant="h6"
+                sx={{ fontWeight: 'bold', mb: 2 }}
+              >
+                Current Role
+              </Typography>
+              <Typography variant="body1">
+                Currently, I am working as Frontend Web Developer at Cerebra IT Services, where I am involved in developing and maintaining web applications.
+                I am part of a team working on the EMS 2.0 project, focusing on building scalable and efficient solutions using React and other modern technologies.
+              </Typography>
             </Paper>
           </Col>
+
         </Row>
       </Container>
 
@@ -210,3 +265,5 @@ function App() {
 }
 
 export default App;
+
+
