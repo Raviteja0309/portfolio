@@ -23,8 +23,8 @@ function App() {
       </Navbar>
 
       {/* Hero Section */}
-      <Box 
-        sx={{ 
+      <Box
+        sx={{
           background: 'linear-gradient(135deg, #2563eb 0%, #4f46e5 100%)',
           color: 'white',
           py: 12
@@ -40,11 +40,11 @@ function App() {
                 Frontend Developer
               </Typography>
               <div className="d-flex gap-3 justify-content-center">
-                <Button variant="light" href="https://github.com" className="d-flex align-items-center gap-2">
+                <Button variant="light" href="https://github.com/Raviteja0309" className="d-flex align-items-center gap-2">
                   <Github size={20} />
                   GitHub
                 </Button>
-                <Button variant="light" href="https://linkedin.com" className="d-flex align-items-center gap-2">
+                <Button variant="light" href="https://www.linkedin.com/feed/" className="d-flex align-items-center gap-2">
                   <Linkedin size={20} />
                   LinkedIn
                 </Button>
@@ -63,8 +63,8 @@ function App() {
             </Typography>
             <Paper elevation={0} sx={{ p: 4, backgroundColor: 'rgba(255, 255, 255, 0.8)' }}>
               <Typography variant="body1" sx={{ mb: 3 }}>
-                I'm a passionate frontend developer with 2 years of experience in building modern web applications. 
-                I specialize in React, JavaScript, and modern CSS frameworks, with a strong focus on creating 
+                I'm a passionate frontend developer with 2 years of experience in building modern web applications.
+                I specialize in React, JavaScript, and modern CSS frameworks, with a strong focus on creating
                 responsive and accessible user interfaces.
               </Typography>
               <Button variant="link" href="mailto:alex@example.com" className="p-0 d-flex align-items-center gap-2">
@@ -85,14 +85,10 @@ function App() {
             </Typography>
             <Paper elevation={0} sx={{ p: 4, backgroundColor: 'rgba(255, 255, 255, 0.8)' }}>
               <Typography variant="body1" sx={{ mb: 3 }}>
-                I'm a passionate frontend developer with 2 years of experience in building modern web applications. 
-                I specialize in React, JavaScript, and modern CSS frameworks, with a strong focus on creating 
+                I'm a passionate frontend developer with 2 years of experience in building modern web applications.
+                I specialize in React, JavaScript, and modern CSS frameworks, with a strong focus on creating
                 responsive and accessible user interfaces.
               </Typography>
-              <Button variant="link" href="mailto:alex@example.com" className="p-0 d-flex align-items-center gap-2">
-                <Mail size={20} />
-                ravichinna2715@gmail.com
-              </Button>
             </Paper>
           </Col>
         </Row>
@@ -153,8 +149,8 @@ function App() {
         <Row>
           <Col md={6} className="mb-4">
             <Card>
-              <Card.Img 
-                variant="top" 
+              <Card.Img
+                variant="top"
                 src="https://cmsphoto.ww-cdn.com/superstatic/41269/art/grande/8594410-13544907.jpg?v=1611760844.6387932&force_webp=1"
                 alt="E-commerce Dashboard"
               />
@@ -168,8 +164,8 @@ function App() {
           </Col>
           <Col md={6} className="mb-4">
             <Card>
-              <Card.Img 
-                variant="top" 
+              <Card.Img
+                variant="top"
                 src="https://ems2.eci.gov.in/static/media/evm_logo.02fe48bf149a4e162435.png"
                 alt="Task Management App"
               />
@@ -195,13 +191,13 @@ function App() {
             </Col>
             <Col md={6}>
               <div className="d-flex gap-4 justify-content-center justify-content-md-end">
-                <a href="https://github.com" className="text-white">
+                <a href="https://github.com/Raviteja0309" className="text-white">
                   <Github size={24} />
                 </a>
-                <a href="https://linkedin.com" className="text-white">
+                <a href="https://www.linkedin.com/feed/" className="text-white">
                   <Linkedin size={24} />
                 </a>
-                <a href="mailto:alex@example.com" className="text-white">
+                <a href="ravichinna2715@gmail.com" className="text-white">
                   <Mail size={24} />
                 </a>
               </div>
